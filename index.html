@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .speadsheet {
+            display: flex;
+
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: peachpuff;
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+        }
+
+        #main {
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+
+            .sidebar a {
+                font-size: 18px;
+            }
+        }
+
+        .banner,
+        .banner1,
+        .banner2,
+        .banner3,
+        .banner4,
+        .banner5,
+        .banner6,
+        .banner7,
+        .banner8,
+        .banner9,
+        .banner10,
+        .banner11 {
+            background-color: rgb(86, 86, 86);
+            justify-content: center;
+            color: white;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 16px;
+        }
+
+        #myform {
+            justify-content: center;
+            display: flex;
+        }
+
+        #myform li {
+            justify-content: center;
+            display: flex;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="spreadsheet">
+        <div class="buttons">
+            <button onclick="changeBanner(1)">Change 1st banner color</button>
+            <button onclick="changeBanner(2)">Change 2nd banner color</button>
+            <button onclick="changeBanner(3)">Change 3rd banner color</button>
+            <button onclick="changeBanner(4)">Change 4th banner color</button>
+            <button onclick="changeBanner(5)">Change 5th banner color</button>
+            <button onclick="changeBanner(6)">Change 6th banner color</button>
+            <button onclick="changeBanner(7)">Change 7th banner color</button>
+            <button onclick="changeBanner(8)">Change 8th banner color</button>
+            <button onclick="changeBanner(9)">Change 9th banner color</button>
+            <button onclick="changeBanner(10)">Change 10th banner color</button>
+            <button onclick="changeBanner(11)">Change 11th banner color</button>
+        </div>
+        <br>
+        <div class="banners">
+            <input id="b1" class="banner1" type="text">
+            <input id="b2" class="banner2" type="text">
+            <input id="b3" class="banner3" type="text">
+            <input id="b4" class="banner4" type="text">
+            <input id="b5" class="banner5" type="text">
+            <input id="b6" class="banner6" type="text">
+            <input id="b7" class="banner7" type="text">
+            <input id="b8" class="banner8" type="text">
+            <input id="b9" class="banner9" type="text">
+            <input id="b10" class="banner10" type="text">
+            <input id="b11" class="banner11" type="text">
+        </div>
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+    </div>
+    <br>
+    <form id="myform">
+        <label>Assign a task</label>
+        <input type="text" id="name" required>
+        <input type="submit" value="submit">
+    </form>
+    <ul id="hrer"></ul>
+
+    <script>
+        document.getElementById("myform").addEventListener('submit', function (event) {
+            event.preventDefault();
+            var name = document.getElementById('name').value;
+            var li = document.createElement('li');
+            li.textContent = 'Homework: ' + name + '.';
+            document.getElementById('hrer').appendChild(li);
+            document.getElementById('name').value = ''; 
+        });
+
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+
+        //banners
+
+        function changeBanner(n) {
+            const colors = ["red", "blue", "green", "yellow", "purple", "orange", "pink", "cyan", "lime", "magenta"];
+            const rand = Math.floor(Math.random() * colors.length);
+            document.getElementById("b" + n).style.backgroundColor = colors[rand];
+        }
+    </script>
+</body>
+
+</html>
